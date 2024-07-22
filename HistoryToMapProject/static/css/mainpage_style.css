@@ -28,7 +28,7 @@
     border-top: 5px solid white; /* Задаем толщину и цвет линии */
     width: 90%; /* Задаем ширину линии */
 }
-#photo_card {
+.photo_card {
     background-color: #121010;
     width: 350px;
     height: 400px;

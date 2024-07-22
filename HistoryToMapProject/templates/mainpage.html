@@ -28,7 +28,7 @@
 
                 {%for event in list_event%}
                 <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center;">
-                <div id="photo_card" style="margin-left: 20px">
+                <div id="{{ event.name_event }}" class="photo_card" style="margin-left: 20px" onclick="getDivId(this.id)">
                     <img id="img_event" src="{{ event.path_img }}" alt="">
                     <div id="horizontal_line_photo"></div>
                     <p id="text_photo">{{ event.name_event }}</p>
@@ -45,6 +45,9 @@
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        function getDivId(divId) {
+            alert('The ID of the clicked div is: ' + divId);
+        }
         document.addEventListener('DOMContentLoaded', function () {
             var mySwiper = new Swiper('.swiper-container', {
                 slidesPerView: 3,
