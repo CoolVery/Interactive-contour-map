@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from WebHistory.views import first_page_start, choise_event_page
+from WebHistory.views import first_page_start, choise_event_page, event_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', first_page_start),
-    path('choise_event/', choise_event_page, name='choise_event_page')
+    path('choise_event/', choise_event_page, name='choise_event_page'),
+    path('event/<str:name_event>/', event_page, name='event')
 ]
