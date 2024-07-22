@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2640480-8ded-4f0c-9545-e1d1c05b3960" name="Changes" comment="add map, line, boundaries for battle of kursk">
+    <list default="true" id="c2640480-8ded-4f0c-9545-e1d1c05b3960" name="Changes" comment="added functionality that removes the necessary notations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HistoryToMapProject/templates/map_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HistoryToMapProject/templates/map_page.html" afterDir="false" />
     </list>
@@ -152,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721674690791</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added functionality that removes the necessary notations">
+      <option name="closed" value="true" />
+      <created>1721676166924</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721676166924</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,7 +171,8 @@
     <MESSAGE value="add model SideBoundaries" />
     <MESSAGE value="added a function in the js that receives a dynamic block ID" />
     <MESSAGE value="add map, line, boundaries for battle of kursk" />
-    <option name="LAST_COMMIT_MESSAGE" value="add map, line, boundaries for battle of kursk" />
+    <MESSAGE value="added functionality that removes the necessary notations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality that removes the necessary notations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
