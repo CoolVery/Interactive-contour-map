@@ -18,27 +18,31 @@
     <div  class="map_block">
         <img class="map_img" src="{{ event_map }}" alt="">
         {% for line in list_direction_lines%}
-        <img class="map_img" src="{{ line.path_img_line }}" alt="">
+        <img id ="{{ line.name_direction_line }}" class="map_img" src="{{ line.path_img_line }}" alt="">
         {% endfor %}
         {% for boundaries in list_side_boundaries%}
-        <img class="map_img" src="{{ boundaries.path_img_boundaries }}" alt="">
+        <img id="{{ boundaries.name_side_boundaries }}" class="map_img" src="{{ boundaries.path_img_boundaries }}" alt="">
         {% endfor %}
     </div>
     <div class="filter_block">
         <button class="but_func" onclick="toggleDropdown()">ФИЛЬТРЫ</button>
         <ul class="dropdown-menu">
-            <li onclick="noned()">Пункт 1</li>
-            <li>Пункт 2</li>
-            <li>Пункт 3</li>
+            {% for line in list_direction_lines%}
+                <li id="filter_{{ line.name_direction_line }}" onclick="RemoveDesignations(this.id)">{{ line.name_direction_line }}</li>
+            {% endfor %}
+            {% for boundaries in list_side_boundaries%}
+                <li id="filter_{{ boundaries.name_side_boundaries }}" onclick="RemoveDesignations(this.id)">{{ boundaries.name_side_boundaries }}</li>
+            {% endfor %}
           </ul>
     </div>
     <script>
-        function noned() {
-          var dropdownMenu = document.querySelector(".arrow");
-          if (dropdownMenu.style.display === "none") {
-            dropdownMenu.style.display = "block";
+        function RemoveDesignations(IdRemove) {
+          let name_element = IdRemove.replace('filter_', '');
+          var removeElement = document.getElementById(name_element);
+          if (removeElement.style.display === "none") {
+            removeElement.style.display = "block";
           } else {
-            dropdownMenu.style.display = "none";
+            removeElement.style.display = "none";
           }
         }
         function toggleDropdown() {
