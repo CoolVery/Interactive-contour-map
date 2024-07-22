@@ -1,0 +1,51 @@
+@font-face {
+    font-family: FontTextButton;
+    src: url('../fonts/Lato-Light.ttf') 
+}
+@font-face {
+    font-family: FontText;
+    src: url('../fonts/Lato-ExtraBold.ttf') 
+}
+#main_block {
+    height: 100vh;
+    background-image: url('../img/background.svg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+#title_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title_page {
+    margin: 30px 0 30px 0;
+    color: white;
+    font-size: 60px;
+    font-family: FontText;
+}
+#horizontal_line { 
+    border-top: 5px solid white; /* Задаем толщину и цвет линии */
+    width: 90%; /* Задаем ширину линии */
+}
+#photo_card {
+    background-color: #121010;
+    width: 350px;
+    height: 400px;
+    border: 3px solid #ffffff; /* Белая граница */
+}
+#img_event {
+    margin: 5px 0 0 5px;
+    width: 340px;
+}
+#horizontal_line_photo {
+    border-top: 3px solid white; /* Задаем толщину и цвет линии */
+    width: 350px;
+}
+#text_photo {
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: FontText;
+}

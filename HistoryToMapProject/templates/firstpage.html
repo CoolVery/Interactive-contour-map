@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/firstpage_style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/global_style.css'%}">
+</head>
+
+<body>
+<div id="main_block">
+    <div id="content_block">
+        <div id="title_block">
+            <div id="vertical_line"></div>
+            <div id="content_up_text">
+                <p id="text_in_content">ИСТОРИЯ - ЭТО СОЮЗ МЕЖДУ УМЕРШИМИ, ЖИВЫМИ И ЕЩЕ НЕ РОДИВШИМСЯ.</p>
+                <p>Эдмунд Бёрк</p>
+            </div>
+        </div>
+        <div id="body_block">
+            <p id="first_text_body">ИСТОРИЯ В КАРТАХ</p>
+            <p id="second_text_body">СОБЫТИЯ В ИНТЕРАКТИВНОМ ВИДЕ</p>
+        </div>
+    </div>
+    <div id="startToSite">
+        <form action="{% url 'choise_event_page' %}" method="get">
+            <button id="but_start">НАЧАТЬ ИЗУЧЕНИЕ</button>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>

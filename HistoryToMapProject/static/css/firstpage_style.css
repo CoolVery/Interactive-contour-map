@@ -1,0 +1,77 @@
+@font-face {
+    font-family: FontTextButton;
+    src: url('../fonts/Lato-Light.ttf')
+}
+@font-face {
+    font-family: FontText;
+    src: url('../fonts/Lato-ExtraBold.ttf')
+}
+#vertical_line {
+    border-left: 2px solid white; 
+    height: 20%;
+}
+#main_block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#title_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+#vertical_line {
+    margin-right: 20px;
+    border-left: 5px solid white; 
+    height: 120px;
+}
+#text_in_content {
+    margin-top: 10px;
+}
+#first_text_body {
+    margin-top: 100px;
+    font-size: 70px;
+}
+#second_text_body {
+    font-family: FontTextButton;
+}
+#body_block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    color: #ffffff;
+}
+#content_block {
+    padding-top: 20px;
+
+    width: 100%;
+    height: 90%;
+    font-family: FontText;
+    font-size: 30px;
+    background-image: url('../img/background.svg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+#startToSite {
+    flex: 6;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: #121010;
+}
+#but_start {
+    color: #ffffff;
+    background-color: #121010;
+    padding: 1% 30% 1% 30%;
+    border: 2px solid #ffffff;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: FontTextButton;
+}
+#content_up_text {
+    color: #ffffff;
+}

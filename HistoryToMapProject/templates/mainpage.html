@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/mainpage_style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/global_style.css'%}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+<div id="main_block">
+    <div id="title_block">
+        <div id="title_page">
+            ВЫБЕРИТЕ СОБЫТИЕ
+        </div>
+        <div id="horizontal_line"></div>
+    </div>
+    <div class="swiper-container" style="display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;">
+        <div class="swiper-wrapper" style="display: flex;">
+
+                {%for event in list_event%}
+                <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center;">
+                <div id="photo_card" style="margin-left: 20px">
+                    <img id="img_event" src="{{ event.path_img }}" alt="">
+                    <div id="horizontal_line_photo"></div>
+                    <p id="text_photo">{{ event.name_event }}</p>
+                </div>
+                    </div>
+                {% endfor %}
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                on: {
+                    slideChange: function () {
+                        if (this.isBeginning) {
+                            document.querySelector('.swiper-button-prev').classList.add('hidden');
+                        } else {
+                            document.querySelector('.swiper-button-prev').classList.remove('hidden');
+                        }
+                        if (this.isEnd) {
+                            document.querySelector('.swiper-button-next').classList.add('hidden');
+                        } else {
+                            document.querySelector('.swiper-button-next').classList.remove('hidden');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
