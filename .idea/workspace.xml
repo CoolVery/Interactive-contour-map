@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2640480-8ded-4f0c-9545-e1d1c05b3960" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/HistoryToMap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/css/firstpage_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/css/global_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/css/mainpage_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/background.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/direction_arrows/german_command_plan.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/direction_arrows/soviet_counterattacks.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/direction_arrows/soviet_strikes.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/event_maps/map_of_the_battle_of_kursk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/events/battle_for_moscow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/events/battle_of_gangut.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/events/battle_of_kulikovo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/static/img/events/kursk_bulge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/templates/firstpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HistoryToMapProject/templates/mainpage.html" afterDir="false" />
+    <list default="true" id="c2640480-8ded-4f0c-9545-e1d1c05b3960" name="Changes" comment="add all images to map of battle of kursk">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HistoryToMapProject/HistoryToMapProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HistoryToMapProject/HistoryToMapProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HistoryToMapProject/WebHistory/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HistoryToMapProject/WebHistory/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +42,7 @@
       <recent name="C:\Users\zepli\PycharmProjects\HistoryToMap\HistoryToMapProject\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zepli\PycharmProjects\HistoryToMap\HistoryToMapProject\static\img\borders" />
       <recent name="C:\Users\zepli\PycharmProjects\HistoryToMap\HistoryToMapProject\static\img\direction_arrows" />
       <recent name="C:\Users\zepli\PycharmProjects\HistoryToMap\HistoryToMapProject\static\img\event_maps" />
       <recent name="C:\Users\zepli\PycharmProjects\HistoryToMap\HistoryToMapProject\static\img\events" />
@@ -106,6 +89,37 @@
       <option name="presentableId" value="Default" />
       <updated>1720720845462</updated>
     </task>
+    <task id="LOCAL-00001" summary="just commit">
+      <option name="closed" value="true" />
+      <created>1721639994809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721639994809</updated>
+    </task>
+    <task id="LOCAL-00002" summary="just commit second">
+      <option name="closed" value="true" />
+      <created>1721640087049</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721640087049</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add all images to map of battle of kursk">
+      <option name="closed" value="true" />
+      <created>1721640375210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721640375210</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="just commit" />
+    <MESSAGE value="just commit second" />
+    <MESSAGE value="add all images to map of battle of kursk" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all images to map of battle of kursk" />
   </component>
 </project>

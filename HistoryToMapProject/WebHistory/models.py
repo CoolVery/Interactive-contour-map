@@ -9,4 +9,11 @@ class Event(models.Model):
 
     def __str__(self):
         return self.name_event
+class DirectionLines(models.Model):
+    id = models.AutoField(primary_key=True, blank=False)
+    name_direction_line = models.TextField(blank=False)
+    path_img_line = models.TextField(blank=False)
+    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='direction_lines')
 
+    def __str__(self):
+        return self.name_direction_line
