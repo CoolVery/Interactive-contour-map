@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2640480-8ded-4f0c-9545-e1d1c05b3960" name="Changes" comment="add all images to map of battle of kursk">
+    <list default="true" id="c2640480-8ded-4f0c-9545-e1d1c05b3960" name="Changes" comment="add model DirectionLines">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HistoryToMapProject/HistoryToMapProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HistoryToMapProject/HistoryToMapProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HistoryToMapProject/WebHistory/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HistoryToMapProject/WebHistory/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,13 +112,22 @@
       <option name="project" value="LOCAL" />
       <updated>1721640375210</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add model DirectionLines">
+      <option name="closed" value="true" />
+      <created>1721641333483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721641333483</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="just commit" />
     <MESSAGE value="just commit second" />
     <MESSAGE value="add all images to map of battle of kursk" />
-    <option name="LAST_COMMIT_MESSAGE" value="add all images to map of battle of kursk" />
+    <MESSAGE value="add model DirectionLines" />
+    <option name="LAST_COMMIT_MESSAGE" value="add model DirectionLines" />
   </component>
 </project>
