@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<div style="width: 100%; margin: 0 auto; display: flex">
     <div class="back_block">
         <form action="{% url 'choise_event_page' %}" method="get">
             <button class="but_func">НАЗАД</button>
@@ -36,6 +37,7 @@
                 <li id="filter_{{ boundaries.name_side_boundaries }}" onclick="RemoveDesignations(this.id)">{{ boundaries.name_side_boundaries }}</li>
             {% endfor %}
           </ul>
+    </div>
     </div>
     <script>
         function RemoveDesignations(IdRemove) {

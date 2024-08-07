@@ -2,12 +2,10 @@
     font-family: FontTextButton;
     src: url('../fonts/Lato-Light.ttf')
 }
-
 @font-face {
     font-family: FontText;
     src: url('../fonts/Lato-ExtraBold.ttf')
 }
-
 body {
     background-color: #EBE2D9;
     margin: 0;
@@ -16,18 +14,15 @@ body {
     height: 100vh;
     box-sizing: border-box;
 }
-
 .back_block,
 .filter_block {
     flex: 1;
 }
-
 .filter_block {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .map_block {
     flex: 3;
     text-align: center;
@@ -35,7 +30,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
 .but_func {
     border: 2px solid;
     background-color: #EBE2D9;
@@ -48,14 +42,12 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
-
 .dropdown-menu {
     display: none;
     border: 1.5px dashed #000000;
     width: 80%;
     padding: 0;
 }
-
 .dropdown-menu li {
     padding: 10px;
     list-style-type: none;
@@ -65,34 +57,24 @@ body {
     font-weight: bold;
 
 }
-
 .dropdown-menu li:hover {
     background-color: #f2f2f2;
 }
-
 .map_img {
     position: absolute;
     height: 100%;
 }
-
-
-
 .dropdown-menu {
     list-style: none;
-    /* Удаляем маркеры списка */
     padding: 0;
     border: 1px solid transparent;
-    /* Устанавливаем начальное состояние границы как прозрачную для всего списка */
 }
 
 .dropdown-menu li {
     opacity: 0;
     animation: dropDown 0.5s ease-in-out forwards;
-
     animation-delay: 0.1s;
-    /* Добавляем задержку для анимации появления ячеек */
 }
-
 @keyframes dropDown {
     0% {
         transform: translateY(-50px);
