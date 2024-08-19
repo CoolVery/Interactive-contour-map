@@ -8,7 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css/mappage_style.css'%}">
     <link rel="stylesheet" href="{% static 'css/global_style.css'%}">
+    <script src="{% static 'js/map_page.js' %}"></script>
+<style>
+        #highlight {
+            position: absolute;
+            border: 2px solid red; /* Цвет круга */
+            border-radius: 50%; /* Круглая форма */
+            display: none; /* Скрыть круг по умолчанию */
+            z-index: 10; /* Подняли круг выше остальных элементов */
 
+        }
+    </style>
 </head>
 
 <body>
@@ -18,14 +28,25 @@
             <button class="but_func">НАЗАД</button>
         </form>
     </div>
-    <div  class="map_block">
-        <img class="map_img" src="{{ event_map }}" alt="">
+    <div class="map_block">
+
+        <img class="map_img" src="{{ event_map }}" alt="" usemap="#event_map_area">
         {% for line in list_direction_lines%}
-        <img id ="{{ line.name_direction_line }}" class="map_img" src="{{ line.path_img_line }}" alt="">
+        <img id ="{{ line.name_direction_line }}" class="map_img" src="{{ line.path_img_line }}" alt="" usemap="#event_map_area">
         {% endfor %}
         {% for boundaries in list_side_boundaries%}
-        <img id="{{ boundaries.name_side_boundaries }}" class="map_img" src="{{ boundaries.path_img_boundaries }}" alt="">
+        <img id="{{ boundaries.name_side_boundaries }}" class="map_img" src="{{ boundaries.path_img_boundaries }}" alt="" usemap="#event_map_area">
         {% endfor %}
+        <map name="event_map_area">
+            {% for event_area in list_event_area.cities %}
+                {% if event_area.isSpecial %}
+                    <area shape="circle" coords="{{ event_area.coordinates }}" id="{{ event_area.city_name }}TS" href="" alt="">
+                {% else %}
+                    <area shape="circle" coords="{{ event_area.coordinates }}" id="{{ event_area.city_name }}" href="" alt="">
+                {% endif %}
+            {% endfor %}
+        </map>
+
     </div>
     <div class="filter_block">
         <button class="but_func" onclick="toggleDropdown()">ФИЛЬТРЫ</button>
@@ -39,28 +60,10 @@
           </ul>
     </div>
     </div>
-    <script>
-        function RemoveDesignations(IdRemove) {
-          var button_elem = document.getElementById(IdRemove);
-          let name_search_element = IdRemove.replace('filter_', '');
-          var removeElement = document.getElementById(name_search_element);
-          if (removeElement.style.display === "none") {
-            removeElement.style.display = "block";
-            button_elem.style.backgroundColor  = "";
-          } else {
-            removeElement.style.display = "none";
-            button_elem.style.backgroundColor  = "#A49999"
-          }
-        }
-        function toggleDropdown() {
-          var dropdownMenu = document.querySelector(".dropdown-menu");
-          if (dropdownMenu.style.display === "none") {
-            dropdownMenu.style.display = "block";
-          } else {
-            dropdownMenu.style.display = "none";
-          }
-        }
-      </script>
+<div id="highlight"></div>
+
+
+
     </body>
 </body>
 </html>

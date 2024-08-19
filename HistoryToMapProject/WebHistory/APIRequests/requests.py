@@ -13,3 +13,11 @@ def get_info_events(name_event, url):
     response = requests.get(url, params=params)
     response.raise_for_status()
     return response.json()
+def get_event_areas(name_event):
+    url = "http://127.0.0.1:8001/event_area_operathion/"
+    params = {
+        "name_event": name_event.replace("_", " ")
+    }
+    response = requests.get(url, params=params)
+    response.raise_for_status()
+    return response.json()
